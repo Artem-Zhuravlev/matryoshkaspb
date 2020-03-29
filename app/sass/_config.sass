@@ -9,6 +9,10 @@
 
 
 body
+	position: relative
+	
+	display: flex
+	flex-direction: column
 	font-family: $main-font
 	font-size: $fontsize
 	min-width: 320px
@@ -16,3 +20,22 @@ body
 	line-height: 1.65
 	overflow-x: hidden
 	color: $textcolor
+	z-index: 1
+	transition: .5s all 
+
+	&.body-overlay
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			z-index: 99
+			margin: auto
+			background-color: rgba(0, 0, 0, .6)
+html
+	overflow-x: hidden
+
+.main
+	padding-top: 80px

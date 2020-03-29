@@ -1,4 +1,5 @@
 .h2
+	margin-bottom: 60px
 	font-size: 80px
 	font-weight: 700
 	line-height: 90%
@@ -8,3 +9,34 @@
 		display: block
 		font-size: 50px;
 		color: $accent
+
+.h3
+	margin-bottom: 60px
+	font-size: 50px
+	font-weight: 700
+	line-height: 90%
+	letter-spacing: .02em
+	text-transform: uppercase
+	span
+		display: block
+		font-size: 30px
+		color: $accent
+
+.list
+	padding-left: 0
+	list-style: none
+	
+.list-item
+	position: relative
+	padding-left: 20px
+	&:before
+		position: absolute
+		top: 0
+		bottom: 0
+		margin: auto
+		left: 0
+		content: ""
+		width: 4px
+		height: 4px
+		border-radius: 50%
+		background-color: $accent

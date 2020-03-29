@@ -1,88 +1,182 @@
 @import config
+@import header
 
 @mixin transition()
 	transition: .2s ease-out all
 
-.header
-	position: relative
-	padding: 15px 0
 
-	&-logo
-		a
-			display: flex
-			align-items: flex-end
-			max-height: 90px
-		img
-			&:first-child
-				width: 15.924%
-			&:last-child
-				width: 63.55%
-
-	&-nav
+.heroes
+	padding-top: 60px
+	.pic
 		display: flex
-		justify-content: flex-end
 		align-items: center
-		@include large-desktop
-			display: none
-		.list-menu	
-			display: flex
-			list-style: none
-			padding-left: 0
-			margin-bottom: 0
-			font-weight: 600
-			.item
-				margin: 0 10px
-			.link
-				color: $textcolor
-				@include transition
-				&:hover
-					color: $accent
-					text-decoration: none
-		.list-info
-			margin-left: 40px
-			padding-left: 0
-			margin-bottom: 0
-			list-style: none
-			font-weight: 600
-			.item
-				margin-bottom: 10px
-				&:last-child
-					margin-bottom: 0
-			.link
-				display: flex
-				align-items: center
-				color: $textcolor
-				i
-					display: flex
-					justify-content: center
-					align-items: center
-					margin-right: 10px
-					min-width: 25px
-					width: 25px
-					height: 25px
-					border-radius: 50%
-					background-color: $accent
-					color: #fff
-	&-burger
+		flex: 1 1
+		padding: 20px
+		img
+			@include transition
+	.item
+		display: flex
+		align-items: space-between
+		flex-direction: column
+		background-color: $accent
+		height: 100%
+		&:hover
+			text-decoration: none
+			.desc
+				background-color: #000
+			.pic
+				img
+					transform: scale(1.05)
+	.desc
+		flex-shrink: 0
+		background-color: #fff
+		color: #fff
+		background-color: $btn-dark-color
+		text-align: center
+		padding: 20px 15px
+		@include transition
+
+@keyframes pulse 
+	0%
+		transform: scale(1)
+	25%
+		transform: scale(1.2)
+	50%
+		transform: scale(1)
+	75%
+		transform: scale(1.2)
+	100% 
+		transform: scale(1)
+
+.present
+	padding-top: 60px
+	.h3
+		margin-bottom: 20px
+		line-height: 1.2
+		span
+			display: block
+			padding-top: 20px
+			text-transform: none
+	.pic
+		display: flex
+		justify-content: center
+		align-items: center 
+		cursor: pointer
+		img
+			animation: pulse 4s infinite ease-in-out
+	.form-title
+		margin-bottom: 20px
+		line-height: 1.2
+		span
+			color: $accent
+			font-weight: 700
+	.form-section
+		padding-right: 30px
+	.btn
+		width: 100%
+		max-width: 100%
+	.present-wrapper
+		position: relative
+		.present-form
+			&:hover
+				transform: scale(1)
+	.present-form
 		position: absolute
 		top: 0
 		bottom: 0
-		right: 15px
 		margin: auto
-		display: none
+		display: flex
+		align-items: center
+		transform-origin: 50% 50%
+		transform: scale(0)
+		background-color: #fff
+		@include transition
+		&.active
+			transform: scale(1)
+
+.programms
+	padding-top: 60px
+	.desc
+		padding: 30px 15px 30px 15px
+	.item
+		border-radius: 3px
+		overflow: hidden
+		box-shadow: 10px 10px 20px #d6d6d6
+	
+	
+	.title
+		margin-bottom: 10px
+		font-weight: 600
+	.info
+		font-weight: 600
+
+.dop-programms
+	padding-top: 60px
+.posts
+	.pic
+		display: block
+		height: 325px
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		// flex-shrink: 0
+	.desc
+		flex: 1 1
+		background-color: #f5f3ed
+		padding: 30px
+	.title
+		font-size: 34px
+		font-weight: 600
+	.item
+		display: flex
 		flex-direction: column
-		justify-content: center
-		max-height: 46px
-		border: none
-		background-color: transparent
-		@include large-desktop
-			display: flex
-		span
-			background-color: $accent
-			width: 30px
-			height: 3px
-			margin-bottom: 5px
-			&:last-child
-				margin-bottom: 0
+		margin-bottom: 30px
+		height: calc(100% - 30px)
+	.prices
+		font-size: 20px
+		font-weight: 600
 
+.master
+	padding-top: 60px
+.about
+	padding: 60px 0
+	&-slider
+		.item
+			max-height: 740px 
+			overflow: hidden
+	&-slider-nav
+		.item
 
+			max-height: 128px
+			overflow: hidden
+		.slick-slide
+			margin: 0 5px 
+		.slick-active
+			position: relative
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				margin: auto
+
+.contacts
+	padding: 60px 0
+	background-color: #cbe6e3
+	border-bottom: 10px solid #4e4c4b
+	.h3
+		margin-bottom: 30px
+	input
+		border-color: $textcolor
+		&::placeholder
+			color: $textcolor
+
+.team
+	padding: 60px 0
+	.h3
+		margin-bottom: 20px
+	.title
+		font-size: 25px
+		font-weight: 600
