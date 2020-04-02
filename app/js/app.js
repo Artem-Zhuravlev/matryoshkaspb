@@ -108,5 +108,61 @@ function generateURL(id) {
 }
 
 findVideos();
+
+
+let prevStep = $('.quiz .prev-step');
+let nextStep = $('.quiz .next-step');
+let quizStep = $('.quiz-step');
+let quizCounter = 0;
+let progress = $('.quiz .progress-bar');
+let progressStartPos = 0
+let progressStep = 100 / (quizStep.length - 1);
+let floor = $('.floors input[type="radio"]');
+
+function addCurClass(counter) {
+	quizStep.eq(counter).addClass('active');
+}
+
+function removeActiveClass() {
+	quizStep.removeClass('active');
+}
+
+function changeProgressMore() {
+	let curPos = progressStartPos += progressStep;
+	progress.css('width', curPos + '%');
+}
+
+function changeProgressLess() {
+	let curPos = progressStartPos -= progressStep;
+	progress.css('width', curPos + '%');
+}
+
+let quizData = {
+	floors: 1
+}
+
+nextStep.on('click', function() {
+	if(quizCounter < 4) {
+		removeActiveClass();
+		++quizCounter;
+		addCurClass(quizCounter);
+		changeProgressMore();
+	}	
+});
+
+prevStep.on('click', function() {
+	if(quizCounter > 0) {
+		removeActiveClass();
+		--quizCounter;
+		addCurClass(quizCounter);
+		changeProgressLess();
+	}
+});
+
+floor.on('click', function() {
+	quizData.floors = parseInt($(this).val());
+});
+
+
 	
 })

@@ -34,3 +34,34 @@
 			transition: .4s ease-in-out opacity
 			user-select: none
 			pointer-events: none
+		&:hover,
+		&:focus
+			color: #fff
+			background-color: darken($accent, 10%)
+		&-border
+			width: 100%
+			padding: 1.25rem 1rem
+			font-size: 14px
+			font-weight: 700
+			color: $accent
+			border: 2px solid $accent
+			text-transform: uppercase
+			letter-spacing: .04em
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				margin: auto
+				background: linear-gradient(to bottom, #009846, #02bc58)
+				z-index: -1
+				opacity: 0
+				transition: .4s ease-in-out opacity
+				user-select: none
+				pointer-events: none
+			&:hover,
+			&:focus
+				background-color: $accent
+				color: #fff
