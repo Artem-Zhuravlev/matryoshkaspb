@@ -18,6 +18,9 @@
 				width: 15.924%
 			&:last-child
 				width: 63.55%
+	@media(max-width: 767px)
+		padding: 14px 0
+		min-height: 63px
 
 	&-nav
 		position: absolute
@@ -35,11 +38,13 @@
 		transition: .5s all 
 		z-index: 2
 		@include mediaMaxWidthTabMobile
-			right: - 100%
+			right: calc(63px - 100vw)
+			max-width: calc(100vw - 63px)
+			font-size: 16px	
 		&.active
 			right: 0
 			@include mediaMaxWidthTabMobile
-				max-width: calc(100% - 63px)
+				max-width: calc(100vw - 63px)
 			
 		.list-menu	
 			display: flex
@@ -59,6 +64,8 @@
 				&:hover
 					background-color: #fff
 					text-decoration: none
+				@include mediaMaxWidthTabMobile
+					padding-left: 20px
 		.list-info
 			padding-top: 20px
 			padding-left: 0
@@ -72,6 +79,11 @@
 				align-items: center
 				color: $textcolor
 				padding: 5px 20px 5px 40px
+				word-wrap: break-word
+				overflow-wrap: break-word
+				hyphens: auto
+				@include mediaMaxWidthTabMobile
+					padding-left: 20px
 				&:hover
 					background-color: #fff
 					text-decoration: none

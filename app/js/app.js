@@ -52,8 +52,67 @@ $(document).ready(function() {
 		asNavFor: '.about-slider',
 		centerMode: true,
 		focusOnSelect: true,
-		arrows: false
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 575,
+				settings: {
+					slidesToShow: 2
+				}
+			}
+		]
 	});
+
+	$('.heroes-slider').slick({
+		slidesToShow: 3,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+
+	$('.programms-slider').slick({
+		slidesToShow: 3,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	})
 
 	
 	function findVideos() {
@@ -204,6 +263,20 @@ apartment.on('click', 'input', function() {
 	console.log(quizData);
 	nextStep.attr('type', 'submit');
 	nextStep.text('Отправить');
-})
+});
+
+
+
+$('#contact-form').on('show.bs.modal', function (event) {
+  	var button = $(event.relatedTarget);
+  	console.log(button);
+  	var recipient = button.data('whatever');
+  	console.log(recipient);
+  	var modal = $(this);
+  	modal.find('.modal-title').text(recipient)
+  	modal.find('.hidden-field').val(recipient);
+});
+
+$(".phone-number").mask("+7(999) 999-9999");
 
 });

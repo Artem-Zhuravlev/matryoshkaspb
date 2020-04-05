@@ -9,6 +9,11 @@
 		display: block
 		font-size: 50px;
 		color: $accent
+	@media(max-width: 767px)
+		margin-bottom: 20px
+		font-size: 40px
+		span
+			font-size: 25px
 
 .h3
 	margin-bottom: 60px
@@ -17,10 +22,19 @@
 	line-height: 90%
 	letter-spacing: .02em
 	text-transform: uppercase
+	overflow-wrap: break-word
+	word-wrap: break-word
+	-webkit-hyphens: auto
+	-ms-hyphens: auto
 	span
 		display: block
 		font-size: 30px
 		color: $accent
+	@media(max-width: 767px)
+		margin-bottom: 20px
+		font-size: 28px
+		span
+			font-size: 20px
 
 .list
 	padding-left: 0
