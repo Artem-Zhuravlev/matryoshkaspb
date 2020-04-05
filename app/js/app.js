@@ -118,6 +118,13 @@ let progress = $('.quiz .progress-bar');
 let progressStartPos = 0
 let progressStep = 100 / (quizStep.length - 1);
 let floor = $('.floors input[type="radio"]');
+let area = $('.area');
+let areaItem = $('.area .radio');
+let areaInput = $('.area .input[type="radio"]');
+let textures = $('.textures');
+let materials = $('.material');
+let apartment = $('.apartment');
+
 
 function addCurClass(counter) {
 	quizStep.eq(counter).addClass('active');
@@ -137,8 +144,20 @@ function changeProgressLess() {
 	progress.css('width', curPos + '%');
 }
 
+function setInputsVal(arr) {
+	arr.each(function(i, item) {
+		let cur = $(item).find('input').data('cur');
+		$(item).find('input').attr('value', cur * quizData.floors);
+		$(item).find('span').text(cur * quizData.floors);
+	})
+}
+
 let quizData = {
-	floors: 1
+	floors: 1,
+	area: 50,
+	texture: '',
+	materials: '',
+	apartment: ''
 }
 
 nextStep.on('click', function() {
@@ -157,12 +176,34 @@ prevStep.on('click', function() {
 		addCurClass(quizCounter);
 		changeProgressLess();
 	}
+
+	nextStep.attr('type', 'button');
+	nextStep.text('Далее');
 });
 
 floor.on('click', function() {
 	quizData.floors = parseInt($(this).val());
+	setInputsVal(areaItem);
 });
 
 
-	
+area.on('click', 'input', function() {
+	quizData.area = parseInt($(this).val());
+});
+
+textures.on('click', 'input', function() {
+	quizData.texture = $(this).val();
+	console.log(quizData);
 })
+materials.on('click', 'input', function() {
+	quizData.materials = $(this).val();
+	console.log(quizData);
+})
+apartment.on('click', 'input', function() {
+	quizData.apartment = $(this).val();
+	console.log(quizData);
+	nextStep.attr('type', 'submit');
+	nextStep.text('Отправить');
+})
+
+});
