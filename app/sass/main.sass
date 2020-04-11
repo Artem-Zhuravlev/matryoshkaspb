@@ -247,14 +247,22 @@
 	padding: 30px 0
 	font-weight: 700;
 	font-size: 20px
-
+	line-height: 1.2
+	.copyright
+		display: inline-block
+		max-width: 800px
+		margin: auto
+		a
+			color: inherit
+			border-bottom: 2px solid #000
+			&:hover
+				border-color: transparent
+ 
 .quiz
-	padding: 60px 0
-	@media(max-width: 767px)
-		padding: 40px 0
-	&-steps
+	padding: 20px 0
+	&-steps 
 		padding: 30px 0
-		min-height: 300px
+		// min-height: 300px
 	&-step
 		display: none
 		&.active
@@ -277,3 +285,106 @@
 .quiz-progress
 .progress-bar
 	background-color: $accent
+
+
+.bg-page
+	position: relative
+	z-index: 1
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+		z-index: -1
+		background-color: rgba(255, 255, 255, .6)
+
+.sec-1
+	padding: 80px 0
+	background: url(../images/dest/house-bg.jpg)no-repeat center
+	background-size: cover
+	text-align: center
+	min-height: 50vh
+	.btn
+		max-width: 300px
+		margin: auto
+	.h4
+		margin-bottom: 30px
+
+.sec-2
+	padding: 80px 0
+
+	.description
+		margin-bottom: 20px
+		flex-wrap: wrap
+		font-weight: 600
+		&-item
+			flex-basis: 33.3%
+			margin-bottom: 15px
+			.name
+				color: #fa5838
+	.price
+		font-size: 20px
+		line-height: 150%
+		margin-bottom: 30px
+		letter-spacing: .02em
+		font-weight: 700
+
+.sec-3
+	padding: 80px 0
+	background-color: #cbe6e3
+
+.home-item
+	margin-bottom: 30px
+	&-img
+		display: block
+	&-info
+		padding: 15px
+		background-color: #fff
+		font-weight: 600
+		.meta
+			margin-bottom: 15px
+			&-item
+				margin-right: 60px
+				.name
+					font-size: 13px
+					line-height: 100%
+					margin-right: 10px
+					letter-spacing: .04em
+					text-transform: uppercase
+					color: #fa5838
+				.value
+					line-height: 150%
+					letter-spacing: .02em
+					color: #000
+	.location
+		margin-bottom: 20px
+.sec-4
+	padding: 80px 0
+	background: url(../images/dest/house-bg-2.jpg)no-repeat center
+.phone-fix
+	position: fixed
+	right: 30px
+	bottom: 30px
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	background-color: $accent 
+	z-index: 1
+	border: none
+	animation: pulse 1.8s infinite
+	svg
+		width: 30px
+		height: 30px
+	&:focus
+		outline: none
+
+@keyframes pulse
+	0%
+		transform: scale(1)
+	50% 
+		transform: scale(1.1)
+	75% 
+		transform: scale(1)

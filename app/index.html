@@ -59,187 +59,8 @@
 
 
 	<main class="main">
-		<div class="quiz">
-			<div class="container">
-
-				<div class="quiz-progress">
-					<div class="progress">
-					  	<div class="progress-bar" style="width: 0%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
-				</div>
-				<form action="#">
-					<div class="quiz-steps">
-
-						<div class="quiz-step active">
-							<div class="info">
-								<h4>Сколько этажей хотите</h4>
-							</div>
-							<div class="floors">
-								<div class="radio">
-									<label>
-										<input type="radio" name="floors" checked value="1">
-										<span>1</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="radio" name="floors" value="2">
-										<span>2</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="radio" name="floors" value="3">
-										<span>3</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="radio" name="floors" value="4">
-										<span>4</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="radio" name="floors" value="5">
-										<span>5</span>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="quiz-step">
-							<div class="info">
-								<h4>Какая площадь дома требуется?</h4>
-								<div class="area">
-									<div class="radio">
-										<label>
-											<input type="radio" name="area" data-cur="50" value="50">
-											<span>50</span>
-										</label>
-									</div>
-									<div class="radio">
-										<label>
-											<input type="radio" name="area" data-cur="100" value="100">
-											<span>100</span>
-										</label>
-									</div>
-									<div class="radio">
-										<label>
-											<input type="radio" name="area" data-cur="150" value="150">
-											<span>150</span>
-										</label>
-									</div>
-									<div class="radio">
-										<label>
-											<input type="radio" name="area" data-cur="200" value="200">
-											<span>200</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="quiz-step">
-							<div class="textures">
-								<h4> Из какого материала стены вы хотите?</h4>
-								<label class="radio-texture">
-									<input type="radio" name="textures" value="Керамзитобетон" checked>
-									<span class="desc">
-										<span class="bg" style="background-image: url(images/dest/penobeton.jpg)"></span>
-										Керамзитобетон
-									</span>
-								</label>
-								<label class="radio-texture">
-									<input type="radio" name="textures" value="Керамзитобетон">
-									<span class="desc">
-										<span class="bg" style="background-image: url(images/dest/penobeton.jpg)"></span>
-										Пенобетон
-									</span>
-								</label>
-								<label class="radio-texture">
-									<input type="radio" name="textures" value="Газобетон">
-									<span class="desc">
-										<span class="bg" style="background-image: url(images/dest/gazobeton.jpg)"></span>
-										Газобетон
-									</span>
-								</label>
-								<label class="radio-texture">
-									<input type="radio" name="textures" value="Ракушечник">
-									<span class="desc">
-										<span class="bg" style="background-image: url(images/dest/rakushechnik.jpg)"></span>
-										Ракушечник
-									</span>
-								</label>
-								<label class="radio-texture">
-									<input type="radio" name="textures" value="Другое">
-									<span class="desc">
-										<span class="bg" style="background-image: url(images/dest/another.jpg)"></span>
-										Другое
-									</span>
-								</label>
-							</div>
-						</div>
-						<div class="quiz-step">
-							<div class="material">
-								<h4>Из какого материала хотите крышу?</h4>
-								<div class="radio">
-									<label>
-										<input type="radio" name="materials" value="Материал1" checked>
-										<span>Материал1</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="radio" name="materials" value="Материал2">
-										<span>Материал2</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="radio" name="materials" value="Материал3">
-										<span>Материал3</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="radio" name="materials" value="Материал4">
-										<span>Материал4</span>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="quiz-step">
-							<div class="apartment">
-								<h4>У вас уже есть участок земли для строительства?</h4>
-								<div class="radio">
-									<label>
-										<input type="radio" name="apartment" value="Да" checked>
-										<span>Да</span>
-									</label>
-								</div>
-								<div class="radio">
-									<label>
-										<input type="radio" name="apartment" value="Нет">
-										<span>Нет</span>
-									</label>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="quiz-controll">
-						<div class="row justify-content-between">
-							<div class="col-md-5">
-								<button class="btn btn-orange-border prev-step" type="button">Назад</button>
-							</div>
-							<div class="col-md-5 d-flex justify-content-end">
-								<button class="btn btn-orange next-step" type="button">Далее</button>
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-		<section class="heroes">
+		
+		<!-- <section class="heroes">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -279,8 +100,8 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="present">
+		</section> -->
+	<!-- 	<section class="present">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-6">
@@ -395,8 +216,8 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="dop-programms posts">
+		</section> -->
+		<!-- <section class="dop-programms posts">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -483,8 +304,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			
+			</div>		
 		</section>
 		<section class="master posts">
 			<div class="container">
@@ -579,215 +399,9 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<div class="about">
-			<div class="container">
-				<div class="about-slider">
-					<div class="item">
-						<img src="images/dest/slider-pic1.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic2.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic3.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic4.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic5.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic6.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic7.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic8.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic9.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic10.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic12.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic13.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic15.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic16.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic17.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic18.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic19.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic20.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic21.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic22.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic23.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic25.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic26.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic27.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic28.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic29.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic31.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic32.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic33.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic34.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic35.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic36.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic37.jpg" alt="" class="img-fluid">
-					</div>
-				</div>
-				<div class="about-slider-nav">
-					<div class="item">
-						<img src="images/dest/slider-pic1.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic2.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic3.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic4.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic5.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic6.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic7.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic8.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic9.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic10.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic12.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic13.jpg" alt="" class="img-fluid">
-					</div>
-
-					<div class="item">
-						<img src="images/dest/slider-pic15.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic16.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic17.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic18.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic19.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic20.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic21.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic22.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic23.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic25.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic26.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic27.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic28.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic29.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic31.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic32.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic33.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic34.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic35.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic36.jpg" alt="" class="img-fluid">
-					</div>
-					<div class="item">
-						<img src="images/dest/slider-pic37.jpg" alt="" class="img-fluid">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="contacts">
+		</section> -->
+		
+		<!-- <div class="contacts">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -803,25 +417,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="team">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7">
-						<h3 class="h3">О КОМАНДЕ MATRYOSHKA</h3>
-						<h4 class="title">Праздник в каждый дом!</h4>
-						<p>«Наша миссия — дарить детям счастье, развивать в них творческие способности. Вы занимаетесь этим, потому что любите детей так же как и их родители, поэтому вам можно смело доверить самое ценное что есть у родителей.</p>
-						<h4 class="title">Миссия</h4>
-						<p>Территория детских праздников «MATRYOSHKA» - новый формат праздников! За полгода провели множество праздников и мероприятий, сотрудничаем с Audi центром, где постоянно проводим крутые мастер-классы и рисуем аквагрим! Работаем с благотворительными фондами и во многих ТЦ, на фестивалях! Строим сильную команду, которая несёт праздник в каждый ДОМ! Делать Мир лучше – наша главная задача, нести праздник, улыбки и мир волшебства, где возможно все! Каждый детский День Рождения – важное событие для вас и нас!</p>
-						<p>Наша основная задача – ответственно организовать полноценный и качественный праздник, к которому у нас индивидуальный подход! Команда «МATRYOSHKA» - это профессиональные аниматоры и аквагримеры, которые создают особенную атмосферу праздника и дарят каждому ребёнку счастливое беззаботное детство! Это яркий пример того, каким должен быть Детский праздник! Это возможность родителей со спокойной душой довериться в руки мастеров своего дела!</p>
-						<p>Есть вопросы?</p>
-						<button class="btn btn-orange"  data-toggle="modal" data-target="#thank-modal1" data-whatever="О нас">Задать вопрос</button>
-					</div>
-					<div class="col-lg-5">
-						<img src="images/dest/team.webp" alt="" class="img-fluid">
-					</div>
-				</div>
-			</div>
-		</div>
+		
 		<div class="recalls">
 			<div class="container">
 				<div class="row">
@@ -920,6 +516,268 @@
 					</div>
 				</div>
 			</div>
+		</div> -->
+
+		<div class="sec-1 bg-page">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="h2">
+							<span>Основной оффер,</span>
+							 на фоне картинка
+						</h1>
+						<strong class="h4 mb-3">Пройдите опрос и получите проект вашего будущего дома в подарок!</strong>
+						<button class="btn btn-orange" data-toggle="modal" data-target="#quiz-modal" data-whatever="О нас">ПОЛУЧИТЬ ПОДАРОК</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec-2 posts">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="h2"><span>Последние</span> проекты</h2>
+					</div>
+				</div>
+				<div class="row align-items-stretch">
+					<div class="col-md-6">
+						<div class="item">
+							<a href="#" class="pic" style="background-image: url(images/dest/house-1.jpg)"></a>
+							<div class="desc">
+								<div class="description d-flex">
+							        <div class="description-item">
+							          	<h4 class="name">Материал</h4>
+							          	<div class="value">Кирпич<br> Газобетон</div>
+							        </div>
+							        <div class="description-item">
+							          	<h4 class="name">площадь</h4>
+							          	<div class="value">374 м<sup>2</sup></div>
+							        </div>
+							        <div class="description-item">
+							          	<h4 class="name">спален</h4>
+							          	<div class="value">6</div>
+							        </div>
+						      	</div>
+						      	<div class="price">от 7,1 млн ₽.</div>
+								<button class="btn btn-dark" data-toggle="modal" data-toggle="modal" data-target="#contact-form" data-whatever="Дом 1">Подробнее</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="item">
+							<a href="#" class="pic" style="background-image: url(images/dest/house-2.jpg)"></a>
+							<div class="desc">
+								<div class="description d-flex">
+							        <div class="description-item">
+							          	<h4 class="name">Материал</h4>
+							          	<div class="value">Кирпич<br> Газобетон</div>
+							        </div>
+							        <div class="description-item">
+							          	<h4 class="name">площадь</h4>
+							          	<div class="value">374 м<sup>2</sup></div>
+							        </div>
+							        <div class="description-item">
+							          	<h4 class="name">спален</h4>
+							          	<div class="value">6</div>
+							        </div>
+						      	</div>
+						      	<div class="price">от 7,1 млн ₽.</div>
+								<button class="btn btn-dark" data-toggle="modal" data-toggle="modal" data-target="#contact-form" data-whatever="Дом 2">Подробнее</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="item">
+							<a href="#" class="pic" style="background-image: url(images/dest/house-3.jpg)"></a>
+							<div class="desc">
+								<div class="description d-flex">
+							        <div class="description-item">
+							          	<h4 class="name">Материал</h4>
+							          	<div class="value">Кирпич<br> Газобетон</div>
+							        </div>
+							        <div class="description-item">
+							          	<h4 class="name">площадь</h4>
+							          	<div class="value">374 м<sup>2</sup></div>
+							        </div>
+							        <div class="description-item">
+							          	<h4 class="name">спален</h4>
+							          	<div class="value">6</div>
+							        </div>
+						      	</div>
+						      	<div class="price">от 7,1 млн ₽.</div>
+								<button class="btn btn-dark" data-toggle="modal" data-toggle="modal" data-target="#contact-form" data-whatever="Дом 3">Подробнее</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="item">
+							<a href="#" class="pic" style="background-image: url(images/dest/house-4.jpg)"></a>
+							<div class="desc">
+								<div class="description d-flex">
+							        <div class="description-item">
+							          	<h4 class="name">Материал</h4>
+							          	<div class="value">Кирпич<br> Газобетон</div>
+							        </div>
+							        <div class="description-item">
+							          	<h4 class="name">площадь</h4>
+							          	<div class="value">374 м<sup>2</sup></div>
+							        </div>
+							        <div class="description-item">
+							          	<h4 class="name">спален</h4>
+							          	<div class="value">6</div>
+							        </div>
+						      	</div>
+						      	<div class="price">от 7,1 млн ₽.</div>
+								<button class="btn btn-dark" data-toggle="modal" data-toggle="modal" data-target="#contact-form" data-whatever="Дом 4">Подробнее</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h3 class="h2"><span>ПОСТРОЕННЫЕ</span>ДОМА</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="home-item">
+						    <a class="home-item-img" href="portpholio/postroennyie-doma/gorki/">
+					        	<img class="img-fluid" src="images/dest/home-1.jpg" alt="Горки">                
+						    </a>
+						    <div class="home-item-info">
+						      	<div class="meta d-flex">
+						        	<div class="meta-item">
+							          	<span class="name">Материал</span><br>
+							          	<span class="value">Кирпич</span>
+						        	</div>
+							        <div class="meta-item">
+							          	<span class="name">Площадь</span> <br>
+							          	<span class="value">333  м<sup>2</sup></span>
+							        </div>
+					      		</div>
+					      		<h3 class="title">Горки</h3>
+					            <div class="location">
+							        <span class="ic__loc"></span>
+							        пос. Горки
+							    </div>
+							    <button class="btn btn-dark" data-toggle="modal" data-target="#contact-form" data-whatever="Горки">Хочу похожий дом</button>
+						    </div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="home-item">
+						    <a class="home-item-img" href="#">
+					        	<img class="img-fluid" src="images/dest/home-2.jpg" alt="Горки">
+					        </a>
+						    <div class="home-item-info">
+						      	<div class="meta d-flex">
+						        	<div class="meta-item">
+							          	<span class="name">Материал</span><br>
+							          	<span class="value">Кирпич</span>
+						        	</div>
+							        <div class="meta-item">
+							          	<span class="name">Площадь</span> <br>
+							          	<span class="value">333  м<sup>2</sup></span>
+							        </div>
+					      		</div>
+					      		<h3 class="title">Горки</h3>
+					            <div class="location">
+							        <span class="ic__loc"></span>
+							        пос. Горки
+							    </div>
+							    <button class="btn btn-dark" data-toggle="modal" data-target="#contact-form" data-whatever="Горки1">Хочу похожий дом</button>
+						    </div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="home-item">
+						    <a class="home-item-img" href="portpholio/postroennyie-doma/gorki/">
+					        	<img class="img-fluid" src="images/dest/home-1.jpg" alt="Горки">                
+						    </a>
+						    <div class="home-item-info">
+						      	<div class="meta d-flex">
+						        	<div class="meta-item">
+							          	<span class="name">Материал</span><br>
+							          	<span class="value">Кирпич</span>
+						        	</div>
+							        <div class="meta-item">
+							          	<span class="name">Площадь</span> <br>
+							          	<span class="value">333  м<sup>2</sup></span>
+							        </div>
+					      		</div>
+					      		<h3 class="title">Горки</h3>
+					            <div class="location">
+							        <span class="ic__loc"></span>
+							        пос. Горки
+							    </div>
+							    <button class="btn btn-dark" data-toggle="modal" data-target="#contact-form" data-whatever="Горки3">Хочу похожий дом</button>
+						    </div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="home-item">
+						    <a class="home-item-img" href="#">
+					        	<img class="img-fluid" src="images/dest/home-2.jpg" alt="Горки">
+					        </a>
+						    <div class="home-item-info">
+						      	<div class="meta d-flex">
+						        	<div class="meta-item">
+							          	<span class="name">Материал</span><br>
+							          	<span class="value">Кирпич</span>
+						        	</div>
+							        <div class="meta-item">
+							          	<span class="name">Площадь</span> <br>
+							          	<span class="value">333  м<sup>2</sup></span>
+							        </div>
+					      		</div>
+					      		<h3 class="title">Горки</h3> 
+					            <div class="location">
+							        <span class="ic__loc"></span>
+							        пос. Горки
+							    </div>
+							    <button class="btn btn-dark" data-toggle="modal" data-target="#contact-form" data-whatever="Горки4">Хочу похожий дом</button>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="team">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<h3 class="h3">О КОМАНДЕ MATRYOSHKA</h3>
+						<h4 class="title">Праздник в каждый дом!</h4>
+						<p>«Наша миссия — дарить детям счастье, развивать в них творческие способности. Вы занимаетесь этим, потому что любите детей так же как и их родители, поэтому вам можно смело доверить самое ценное что есть у родителей.</p>
+						<h4 class="title">Миссия</h4>
+						<p>Территория детских праздников «MATRYOSHKA» - новый формат праздников! За полгода провели множество праздников и мероприятий, сотрудничаем с Audi центром, где постоянно проводим крутые мастер-классы и рисуем аквагрим! Работаем с благотворительными фондами и во многих ТЦ, на фестивалях! Строим сильную команду, которая несёт праздник в каждый ДОМ! Делать Мир лучше – наша главная задача, нести праздник, улыбки и мир волшебства, где возможно все! Каждый детский День Рождения – важное событие для вас и нас!</p>
+						<p>Наша основная задача – ответственно организовать полноценный и качественный праздник, к которому у нас индивидуальный подход! Команда «МATRYOSHKA» - это профессиональные аниматоры и аквагримеры, которые создают особенную атмосферу праздника и дарят каждому ребёнку счастливое беззаботное детство! Это яркий пример того, каким должен быть Детский праздник! Это возможность родителей со спокойной душой довериться в руки мастеров своего дела!</p>
+						<p>Есть вопросы?</p>
+						<button class="btn btn-orange"  data-toggle="modal" data-target="#thank-modal1" data-whatever="О нас">Задать вопрос</button>
+					</div>
+					<div class="col-lg-5">
+						<img src="images/dest/team.webp" alt="" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec-1 bg-page">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h3 class="h2">
+							<span>Основной оффер,</span>
+							 на фоне картинка
+						</h3>
+						<strong class="h4 mb-3">Пройдите опрос и получите проект вашего будущего дома в подарок!</strong>
+						<button class="btn btn-orange" data-toggle="modal" data-target="#quiz-modal" data-whatever="О нас">ПОЛУЧИТЬ ПОДАРОК</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</main><!-- main -->
 
@@ -927,10 +785,26 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="text-center">
-				<span class="copyright">© 2020 Matryoshka</span>
+				<span class="copyright">Доменное имя © 2020, ссылка, открывающая <a href="#">политику конфиденциальности</a> вовсплывающем блоке</span>
 			</div>
 		</div>
 	</footer><!-- footer -->
+
+	<button class="phone-fix" data-toggle="modal" data-target="#contact-form" data-whatever="Свяжитесь с нами">
+		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+			<path d="M256,128c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16c35.296,0,64,28.704,64,64c0,8.832,7.168,16,16,16
+			c8.832,0,16-7.168,16-16C352,171.072,308.928,128,256,128z" fill="#fff"/>
+			<path d="M256,64c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16c70.592,0,128,57.408,128,128c0,8.832,7.168,16,16,16
+			c8.832,0,16-7.168,16-16C416,135.776,344.224,64,256,64z" fill="#fff"/>
+			<path d="M256,0c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16c105.888,0,192,86.112,192,192c0,8.832,7.168,16,16,16
+			c8.832,0,16-7.168,16-16C480,100.48,379.488,0,256,0z" fill="#fff"/>
+			<path d="M432,352c-46.464,0-90.72-10.112-131.52-30.048c-3.84-1.92-8.256-2.144-12.256-0.736c-4.032,1.408-7.328,4.352-9.184,8.16
+			l-25.152,52.064C188.8,345.12,134.912,291.264,98.624,226.176l52.032-25.216c3.84-1.856,6.752-5.152,8.16-9.184
+			c1.376-4,1.12-8.416-0.768-12.256C138.112,138.72,128,94.464,128,48c0-8.832-7.168-16-16-16H16C7.168,32,0,39.168,0,48
+			c0,238.208,193.792,432,432,432c8.832,0,16-7.168,16-16v-96C448,359.168,440.832,352,432,352z" fill="#fff"/>
+		</svg>
+
+	</button>
 
 
 	<div class="modal fade" id="contact-form" tabindex="-1" role="dialog" aria-hidden="true">
@@ -982,6 +856,198 @@
 			        	<button type="submit" class="btn btn-orange">Отправить и получить подарки</button>
 			        	<span class="politic">нажимая отправить вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
 			        </form>
+		      	</div>
+    		</div>
+  		</div>
+	</div>
+
+	<div class="modal fade" id="quiz-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  		<div class="modal-dialog modal-dialog-centered" role="document">
+    		<div class="modal-content"> 				
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          	<span aria-hidden="true">&times;</span>
+			        </button>
+		      	<div class="modal-body">
+			        <div class="quiz">
+						<div class="container">
+							<h3 class="h4">Пройдите опрос</h3>
+							<div class="quiz-progress">
+								<div class="progress">
+								  	<div class="progress-bar" style="width: 0%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<form action="#">
+								<div class="quiz-steps">
+
+									<div class="quiz-step active">
+										<div class="info">
+											<h4 class="mb-2">Сколько этажей хотите</h4>
+										</div>
+										<div class="floors">
+											<div class="radio">
+												<label>
+													<input type="radio" name="floors" checked value="1">
+													<span>1</span>
+												</label>
+											</div>
+											<div class="radio">
+												<label>
+													<input type="radio" name="floors" value="2">
+													<span>2</span>
+												</label>
+											</div>
+											<div class="radio">
+												<label>
+													<input type="radio" name="floors" value="3">
+													<span>3</span>
+												</label>
+											</div>
+<!-- 											<div class="radio">
+												<label>
+													<input type="radio" name="floors" value="4">
+													<span>4</span>
+												</label>
+											</div>
+											<div class="radio">
+												<label>
+													<input type="radio" name="floors" value="5">
+													<span>5</span>
+												</label>
+											</div> -->
+										</div>
+									</div>
+									<div class="quiz-step">
+										<div class="info">
+											<h4>Какая площадь дома требуется?</h4>
+											<div class="area">
+												<div class="radio">
+													<label>
+														<input type="radio" name="area" data-cur="50" value="50">
+														<span>50</span>
+													</label>
+												</div>
+												<div class="radio">
+													<label>
+														<input type="radio" name="area" data-cur="100" value="100">
+														<span>100</span>
+													</label>
+												</div>
+												<div class="radio">
+													<label>
+														<input type="radio" name="area" data-cur="150" value="150">
+														<span>150</span>
+													</label>
+												</div>
+											<!-- 	<div class="radio">
+													<label>
+														<input type="radio" name="area" data-cur="200" value="200">
+														<span>200</span>
+													</label>
+												</div> -->
+											</div>
+										</div>
+									</div>
+									<div class="quiz-step">
+										<div class="textures">
+											<h4> Из какого материала стены вы хотите?</h4>
+											<label class="radio-texture">
+												<input type="radio" name="textures" value="Керамзитобетон" checked>
+												<span class="desc">
+													<span class="bg" style="background-image: url(images/dest/penobeton.jpg)"></span>
+													Керамзитобетон
+												</span>
+											</label>
+											<label class="radio-texture">
+												<input type="radio" name="textures" value="Керамзитобетон">
+												<span class="desc">
+													<span class="bg" style="background-image: url(images/dest/penobeton.jpg)"></span>
+													Пенобетон
+												</span>
+											</label>
+											<label class="radio-texture">
+												<input type="radio" name="textures" value="Газобетон">
+												<span class="desc">
+													<span class="bg" style="background-image: url(images/dest/gazobeton.jpg)"></span>
+													Газобетон
+												</span>
+											</label>
+											<label class="radio-texture">
+												<input type="radio" name="textures" value="Ракушечник">
+												<span class="desc">
+													<span class="bg" style="background-image: url(images/dest/rakushechnik.jpg)"></span>
+													Ракушечник
+												</span>
+											</label>
+											<label class="radio-texture">
+												<input type="radio" name="textures" value="Другое">
+												<span class="desc">
+													<span class="bg" style="background-image: url(images/dest/another.jpg)"></span>
+													Другое
+												</span>
+											</label>
+										</div>
+									</div>
+									<div class="quiz-step">
+										<div class="material">
+											<h4>Из какого материала хотите крышу?</h4>
+											<div class="radio">
+												<label>
+													<input type="radio" name="materials" value="Материал1" checked>
+													<span>Материал1</span>
+												</label>
+											</div>
+											<div class="radio">
+												<label>
+													<input type="radio" name="materials" value="Материал2">
+													<span>Материал2</span>
+												</label>
+											</div>
+											<div class="radio">
+												<label>
+													<input type="radio" name="materials" value="Материал3">
+													<span>Материал3</span>
+												</label>
+											</div>
+											<div class="radio">
+												<label>
+													<input type="radio" name="materials" value="Материал4">
+													<span>Материал4</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="quiz-step">
+										<div class="apartment">
+											<h4>У вас уже есть участок земли для строительства?</h4>
+											<div class="radio">
+												<label>
+													<input type="radio" name="apartment" value="Да" checked>
+													<span>Да</span>
+												</label>
+											</div>
+											<div class="radio">
+												<label>
+													<input type="radio" name="apartment" value="Нет">
+													<span>Нет</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="quiz-controll">
+									<div class="row justify-content-between">
+										<div class="col-md-6">
+											<button class="btn btn-orange-border prev-step" type="button">Назад</button>
+										</div>
+										<div class="col-md-6 d-flex justify-content-end">
+											<button class="btn btn-orange next-step" type="button">Далее</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
 		      	</div>
     		</div>
   		</div>
