@@ -39,80 +39,6 @@ $(document).ready(function() {
 
 	getToggleForm();
 
-	$('.about-slider').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		asNavFor: '.about-slider-nav'
-	});
-
-	$('.about-slider-nav').slick({
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		asNavFor: '.about-slider',
-		centerMode: true,
-		focusOnSelect: true,
-		arrows: false,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 4
-				}
-			},
-
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 3
-				}
-			},
-			{
-				breakpoint: 575,
-				settings: {
-					slidesToShow: 2
-				}
-			}
-		]
-	});
-
-	$('.heroes-slider').slick({
-		slidesToShow: 3,
-		arrows: false,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 2
-				}
-			},
-			{
-				breakpoint: 767,
-				settings: {
-					slidesToShow: 1
-				}
-			}
-		]
-	});
-
-	$('.programms-slider').slick({
-		slidesToShow: 3,
-		arrows: false,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 2
-				}
-			},
-			{
-				breakpoint: 767,
-				settings: {
-					slidesToShow: 1
-				}
-			}
-		]
-	})
 
 	
 	function findVideos() {
@@ -172,6 +98,7 @@ findVideos();
 let prevStep = $('.quiz .prev-step');
 let nextStep = $('.quiz .next-step');
 let quizStep = $('.quiz-step');
+
 let quizCounter = 0;
 let progress = $('.quiz .progress-bar');
 let progressStartPos = 0
@@ -183,6 +110,7 @@ let areaInput = $('.area .input[type="radio"]');
 let textures = $('.textures');
 let materials = $('.material');
 let apartment = $('.apartment');
+let apartmentField = $('.apartment-field');
 
 
 function addCurClass(counter) {
@@ -216,11 +144,12 @@ let quizData = {
 	area: 50,
 	texture: '',
 	materials: '',
-	apartment: ''
+	apartment: '',
+	phone: ''
 }
 
 nextStep.on('click', function() {
-	if(quizCounter < 4) {
+	if(quizCounter < quizStep.length - 1) {
 		removeActiveClass();
 		++quizCounter;
 		addCurClass(quizCounter);
@@ -258,14 +187,14 @@ materials.on('click', 'input', function() {
 	quizData.materials = $(this).val();
 	console.log(quizData);
 })
-apartment.on('click', 'input', function() {
+apartmentField.on('click', 'input', function() {
 	quizData.apartment = $(this).val();
-	console.log(quizData);
+});
+apartment.on('click', 'input', function() {
+	quizData.phone = $(this).val();
 	nextStep.attr('type', 'submit');
 	nextStep.text('Отправить');
 });
-
-
 
 $('#contact-form').on('show.bs.modal', function (event) {
   	var button = $(event.relatedTarget);
@@ -278,5 +207,7 @@ $('#contact-form').on('show.bs.modal', function (event) {
 });
 
 $(".phone-number").mask("+7(999) 999-9999");
-
+$('.lazy').Lazy({
+	effect: 'fadeIn'
+});
 });

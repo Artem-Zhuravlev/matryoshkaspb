@@ -3,7 +3,7 @@
 @import header
 
 @mixin transition()
-	transition: .2s ease-out all
+	transition: .2s ease-out all 
 
 
 .heroes
@@ -302,11 +302,14 @@
 		background-color: rgba(255, 255, 255, .6)
 
 .sec-1
-	padding: 80px 0
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
 	background: url(../images/dest/house-bg.jpg)no-repeat center
 	background-size: cover
 	text-align: center
-	min-height: 50vh
+	height: calc(100vh - 80px) 
 	.btn
 		max-width: 300px
 		margin: auto
@@ -388,3 +391,14 @@
 		transform: scale(1.1)
 	75% 
 		transform: scale(1)
+
+#politic
+	.modal-dialog
+		max-width: 800px
+		width: 100%
+	.modal-body
+		padding-top: 40px
+		padding-bottom: 40px
+	.close
+		top: 20px
+		right: 20px
