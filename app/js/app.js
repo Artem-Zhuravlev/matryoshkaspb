@@ -206,8 +206,16 @@ $('#contact-form').on('show.bs.modal', function (event) {
   	modal.find('.hidden-field').val(recipient);
 });
 
+$('.selfarea').on('click', function() {
+	// $('.area input[type="radio"]').attr('checked', false);
+	$('.area input[type="radio"]').prop('checked', false);
+})
+
 $(".phone-number").mask("+7(999) 999-9999");
 $('.lazy').Lazy({
 	effect: 'fadeIn'
 });
+
+
+
 });
