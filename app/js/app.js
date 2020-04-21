@@ -161,6 +161,7 @@ prevStep.on('click', function() {
 	if(quizCounter > 0) {
 		removeActiveClass();
 		--quizCounter;
+		nextStep.removeClass('sbmt-btn');
 		addCurClass(quizCounter);
 		changeProgressLess();
 	}
@@ -193,6 +194,7 @@ apartmentField.on('click', 'input', function() {
 apartment.on('click', 'input', function() {
 	quizData.phone = $(this).val();
 	nextStep.attr('type', 'submit');
+	nextStep.addClass('sbmt-btn');
 	nextStep.text('Отправить');
 });
 
@@ -216,6 +218,11 @@ $('.lazy').Lazy({
 	effect: 'fadeIn'
 });
 
+
+$('.modal').on('click', '.sbmt-btn', function() {
+	$(this).closest('.modal').modal('hide');
+	$('#thank-modal').modal('show');
+}) 
 
 
 });
